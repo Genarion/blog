@@ -1,0 +1,222 @@
+*{
+  /border: 1px solid black;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #264073;
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.75);
+      box-shadow: 0 1px 0 rgba(12,13,14,0.1), 0 1px 3px rgba(12,13,14,0.1), 0 4px 20px rgba(12,13,14,0.035), 0 1px 1px rgba(12,13,14,0.025);
+}
+nav h1{
+  font-size: 2.4em;
+  margin-left: 2rem;
+  color: white;
+  color: #e0dfdc;
+  letter-spacing: .1em;
+  text-shadow:
+    0 -1px 0 #fff,
+    0 1px 0 #2e2e2e,
+    0 2px 0 #2c2c2c,
+    0 3px 0 #2a2a2a,
+    0 4px 0 #282828,
+    0 5px 0 #262626,
+    0 6px 0 #242424,
+    0 7px 0 #222,
+    0 8px 0 #202020,
+    0 9px 0 #1e1e1e,
+    0 10px 0 #1c1c1c,
+    0 11px 0 #1a1a1a,
+    0 12px 0 #181818,
+    0 13px 0 #161616,
+    0 14px 0 #141414,
+    0 15px 0 #121212,
+    0 22px 30px rgba(0, 0, 0, 0.9);
+}
+nav h1, nav ul{
+  display: inline;
+}
+nav ul{
+  margin-left: 5rem;
+}
+nav ul li{
+  display: inline-block;
+  margin-right: 2rem;
+}
+nav ul li a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6em;
+  text-align: center;
+  color: white;
+}
+nav ul li a:hover{
+  text-decoration: none;
+}
+nav input{
+  margin-left: auto;
+  margin-right: 3rem;
+  text-align: right;
+}
+#login{
+  text-decoration: none;
+  color: white;
+  margin-right: 2rem;
+}
+
+header{
+  padding-top: 2rem;
+  background: #4d6699;
+  background-image: url(../img/header.png);
+  background-position: center;
+  background-size: 212px;
+  box-shadow: 0 0px 40px 0px rgba(0,0,0,0.5) inset
+}
+header h2{
+  text-align: center;
+  text-shadow: -1px 0px 4px rgba(39, 39, 39, 0.85);
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+}
+header h2 span{
+  display: block;
+}
+header img{
+  border-radius: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 150px;
+  bottom: -75px;
+  -webkit-box-shadow: 0px 0px 74px -5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 74px -5px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 74px -5px rgba(0,0,0,0.75);
+  -webkit-transition-property: width; /* Safari */
+  -webkit-transition-duration: 0.3s; /* Safari */
+  transition-property: height;
+  transition-duration: 0.3s;
+}
+header img:hover{
+  height: 155px;
+}
+
+.login{
+  display: none;
+  background-color: white;
+  box-shadow: 0px 0px 9px 1px rgba(109, 107, 107, 0.86);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min-content;
+  padding: 1.2rem;
+  z-index: 1;
+}
+.login h3{
+  margin: 0;
+}
+.login input[type=email], .login input[type=password] {
+    padding:5px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+.login input[type=submit] {
+    padding:5px 15px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 1em;
+}
+#closeLogin{
+  float: right;
+}
+#closeLogin:hover{
+  cursor: pointer;
+}
+
+.who-am{
+  padding: 4rem;
+}
+.who-am h2{
+  font-size: 1.6em;
+}
+.who-am p{
+  margin-left: 5rem;
+  margin-right: 5rem;
+  font-size: 1.1em;
+}
+
+
+.last-post{
+  padding: 2rem;
+}
+.last-post h2{
+  font-size: 1.6em;
+  text-align: center;
+  margin-bottom: 4rem;
+  grid-row: 1;
+}
+.posts{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2,1fr);
+  grid-gap: 2.5rem 2.5rem;
+}
+.last-post article{
+  box-shadow: 0px 0px 9px 1px rgba(171,171,171,0.74);
+}
+.last-post article img{
+  width: 100%;
+  opacity: 0.8;
+}
+.last-post article h3{
+  font-size: 1.5em;
+  margin-left: 0.7rem;
+}
+.last-post article p{
+  word-wrap: break-word;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+footer{
+  background-color: #264073;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer img{
+  height: 30px;
+}
+.social-networks{
+  display: inline-flex;
+}
+.social-networks p{
+  margin-left: 1rem;
+  margin-right: 1.6rem;
+  color: white;
+}
+.social-networks a{
+  align-self: center;
+  margin-right: 1.5rem;
+}
+.terms-policies{
+  display: inline-flex;
+}
+.terms-policies a{
+  text-decoration: none;
+  color: white;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  text-align: center;
+}
